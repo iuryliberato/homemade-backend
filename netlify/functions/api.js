@@ -4,7 +4,7 @@ import bodyParser from 'body-parser'
 import 'dotenv/config'
 import serverless from "serverless-http"
 
-import logger from '../../lib/logger.js'
+// import logger from '../../lib/logger.js'
 import { startServer } from '../../index.js'
 import router from '../../config/router.js'
 
@@ -12,7 +12,7 @@ const api = express()
 
 api.use(bodyParser.json())
 
-api.use('/', logger)
+// api.use('/', logger)
 api.use('/api', router)
 
 
