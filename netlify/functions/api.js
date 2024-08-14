@@ -15,7 +15,7 @@ api.use(bodyParser.json())
 // api.use('/', logger)
 api.use('/api', router)
 
-api.use(express.static("public"));
+
 
 function starterServer() {
   try {
